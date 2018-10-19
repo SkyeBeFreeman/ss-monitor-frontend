@@ -1,0 +1,13 @@
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+.mydiv {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #c9c6c6;
+    border-radius: 10px;
+}
+.mychart {
+    height: 400px;
+}
