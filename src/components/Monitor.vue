@@ -17,7 +17,7 @@
 <script>
 import axios from 'axios';
 import {getCookie, setCookie} from '../utils/cookieUtils';
-import echarts from '../../static/js/echarts.min.js';
+import echarts from 'echarts';
 const HOST_NAME = process.env.HOST_NAME;
 export default {
   name: 'Monitor',
@@ -147,6 +147,7 @@ export default {
           confirmButtonText: 'Login',
           cancelButtonText: 'Cancel',
           inputPattern: /qazwsx/,
+          inputType: 'password',
           inputErrorMessage: 'please enter your password'
         }).then(({ value }) => {
           this.isLogin = true;

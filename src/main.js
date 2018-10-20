@@ -3,11 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import ElementUI from 'element-ui'
+import { Container, Header, Main, MessageBox } from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.config.productionTip = false
-Vue.use(ElementUI);
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Main)
+Vue.prototype.$prompt = MessageBox.prompt;
 
 /* eslint-disable no-new */
 new Vue({
